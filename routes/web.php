@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    echo "Selamat Datang";
+    });
+
+Route::get('/home',function() {
+    echo "NAMA : KRISMAWATI ";
+    echo "NIM  : 2041720019 ";
+    echo "KELAS : TI-2D";
+});
+
+Route::get('/articles/{id}', function ($id) {
+    echo " Ini merupakan halaman artikel dengan ID " .$id;
+});
+
+
